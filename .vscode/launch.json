@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "(lldb) Launch",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "terminal": "integrated",
+            "preLaunchTask": "Build debug clang"
+        },
+        {
+            "type": "gdb",
+            "request": "launch",
+            "name": "(gdb) Run",
+            "target": "${workspaceFolder}/${fileBasenameNoExtension}",
+            "cwd": "${workspaceRoot}",
+            "valuesFormatting": "disabled",
+            "preLaunchTask": "Build gcc",
+            "terminal": "gnome-terminal",
+
+        },
+        {
+            "type": "gdb",
+            "request": "launch",
+            "name": "(gdb) Run & Recompile",
+            "target": "${workspaceFolder}/${fileBasenameNoExtension}",
+            "cwd": "${workspaceRoot}",
+            "valuesFormatting": "disabled",
+            "preLaunchTask": "Build debug gcc",
+            "terminal": "gnome-terminal"
+        }
+    ]
+}
