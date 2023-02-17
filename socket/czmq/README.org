@@ -1,0 +1,8 @@
+#+TITLE: simple messaging test
+
+comunicate 2 program without Linux kernel API with czmq library
+
+[[file:media.png]]
+
+* library
+  - [[https://github.com/zeromq/czmq][czmq High-level C binding for ZeroMQ]]
