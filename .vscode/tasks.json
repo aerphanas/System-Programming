@@ -6,7 +6,7 @@
         {
             "label": "Build debug clang",
             "type": "shell",
-            "command": "clang -g -o ${fileBasenameNoExtension} ${fileBasename}",
+            "command": "clang -g -o ${workspaceFolder}/bin/${fileBasenameNoExtension}.bin ${fileDirname}/${fileBasename}",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -15,7 +15,7 @@
         {
             "label": "Build gcc",
             "type": "shell",
-            "command": "gcc -o ${fileBasenameNoExtension} ${fileBasename}",
+            "command": "gcc -o ${workspaceFolder}/bin/${fileBasenameNoExtension}.bin ${fileDirname}/${fileBasename}",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -24,7 +24,7 @@
         {
             "label": "Build debug gcc",
             "type": "shell",
-            "command": "gcc -g -o ${fileBasenameNoExtension} ${fileBasename}",
+            "command": "gcc -g -o ${workspaceFolder}/bin/${fileBasenameNoExtension}.bin ${fileDirname}/${fileBasename}",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
