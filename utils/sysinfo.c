@@ -1,3 +1,5 @@
+#ifdef linux
+
 #include <stddef.h>
 #include <stdio.h>
 #include <sys/sysinfo.h>
@@ -40,3 +42,17 @@ byte_to_megabyte(unsigned long* num)
 {
     return *num / 1048576;
 }
+#endif
+
+#ifdef _WIN32
+
+#include <stdio.h>
+
+int
+main()
+{
+    printf("program only work on linux \n");
+    return 0;
+}
+
+#endif
