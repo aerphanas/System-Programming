@@ -14,16 +14,22 @@ main()
             usleep(50000);
         }
     } else {
+        printf("send stop signal \n");
         kill(pd, SIGSTOP);
         sleep(1);
+        printf("send continue signal \n");
         kill(pd, SIGCONT);
         sleep(1);
+        printf("send stop signal \n");
         kill(pd, SIGSTOP);
         sleep(1);
+        printf("send continue signal \n");
         kill(pd, SIGCONT);
         sleep(1);
+        printf("send kill signal \n");
         kill(pd, SIGKILL);
         wait(NULL);
+        printf("end of output\n");
     }
     return 0;
 }

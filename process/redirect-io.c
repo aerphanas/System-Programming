@@ -11,6 +11,7 @@ main()
         return 1;
     }
 
+    // duplicate output.txt to stdout
     int fd2 = dup2(fd, STDOUT_FILENO);
     if (fd2 == -1) {
         return 1;
