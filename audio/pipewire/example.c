@@ -1,7 +1,5 @@
 #include <math.h>
-
 #include <spa/param/audio/format-utils.h>
-
 #include <pipewire/pipewire.h>
 
 #define M_PI_M2 ( M_PI + M_PI )
