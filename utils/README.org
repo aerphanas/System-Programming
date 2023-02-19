@@ -1,0 +1,5 @@
+#+TITLE: How to run cmake
+
+#+BEGIN_SRC sh
+cmake . -B build
+#+END_SRC
