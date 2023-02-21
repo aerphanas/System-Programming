@@ -24,6 +24,26 @@
             "valuesFormatting": "disabled",
             "preLaunchTask": "Build debug gcc",
             "terminal": "gnome-terminal"
+        },
+        {
+            "type": "gdb",
+            "request": "launch",
+            "name": "(gdb) Run with threads",
+            "target": "bin/${fileBasenameNoExtension}.bin",
+            "cwd": "${workspaceRoot}",
+            "valuesFormatting": "disabled",
+            "preLaunchTask": "Build gcc with pthreads",
+            "terminal": "gnome-terminal"
+        },
+        {
+            "type": "gdb",
+            "request": "launch",
+            "name": "(gdb) Run & Recompile with threads",
+            "target": "bin/${fileBasenameNoExtension}.bin",
+            "cwd": "${workspaceRoot}",
+            "valuesFormatting": "disabled",
+            "preLaunchTask": "Build debug gcc with pthreads",
+            "terminal": "gnome-terminal"
         }
     ]
 }

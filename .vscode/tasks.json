@@ -29,6 +29,24 @@
             "group": {
                 "kind": "build",
             }
+        },
+        {
+            "label": "Build gcc with pthreads",
+            "type": "shell",
+            "command": "gcc -pthread -o ${workspaceFolder}/bin/${fileBasenameNoExtension}.bin ${fileDirname}/${fileBasename}",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+            }
+        },
+        {
+            "label": "Build debug gcc with pthreads",
+            "type": "shell",
+            "command": "gcc -g -pthread -o ${workspaceFolder}/bin/${fileBasenameNoExtension}.bin ${fileDirname}/${fileBasename}",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+            }
         }
     ]
 }
