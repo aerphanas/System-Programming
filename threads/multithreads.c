@@ -25,9 +25,8 @@ main()
     for (int i = 0; i < NUM; i++)
         pthread_create(pt+i, NULL, &calculate, NULL);
 
-    for (int i = 0; i < NUM; i++) {
+    for (int i = 0; i < NUM; i++)
         pthread_join(*(pt+i), NULL);
-    }
 
     pthread_mutex_destroy(&mutex);
 
